@@ -1,0 +1,12 @@
+package com.yjx.app.modular.base.repository;
+
+/** 
+ * <p> 
+ *   {}
+ * </p> 
+ *
+ * @author yejx 
+ * @date 2019/9/17 17:38
+ */
+public interface AppTestRepository extends MongoRepository<Test, String>{
+}
