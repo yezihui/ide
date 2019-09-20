@@ -76,7 +76,6 @@ public class ChainOnRequestHeaderAop {
     public Object around(ProceedingJoinPoint point) throws Throwable {
         //初始化临时保存器
         log.info("初始化临时保存器");
-
         try {
             Object result = point.proceed();
             log.info("请求调用成功");
@@ -89,15 +88,20 @@ public class ChainOnRequestHeaderAop {
         }
     }
 
+    /**
+     * 获取token验证注解
+     *
+     * @param method 方法
+     * @return 注解
+     * @author yejx
+     * @date 2019/9/19 11:13
+     */
     private Annotation getOnMethod(Method method) {
         TokenValid tokenValid = method.getAnnotation(TokenValid.class);
-
         Annotation annotation = null;
-
         if (tokenValid != null) {
             annotation = tokenValid;
         }
-
         return annotation;
     }
 }

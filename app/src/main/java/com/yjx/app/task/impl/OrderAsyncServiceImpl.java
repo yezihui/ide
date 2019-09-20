@@ -19,7 +19,7 @@ import static cn.hutool.core.date.DatePattern.NORM_DATETIME_MS_PATTERN;
 
 /**
  * <p> 
- *  
+ * 订单异步处理队列
  * </p> 
  *
  * @author yejx 
@@ -29,6 +29,9 @@ import static cn.hutool.core.date.DatePattern.NORM_DATETIME_MS_PATTERN;
 @Slf4j
 public class OrderAsyncServiceImpl implements IOrderAsyncService {
 
+    /**
+     * 支付过期时间 5分钟
+     */
     private static final int PAY_TIMEOUT = 5;
 
     /**
@@ -75,6 +78,7 @@ public class OrderAsyncServiceImpl implements IOrderAsyncService {
         List<OrderEntity> waitPayOrderList = new ArrayList<>(2);
         OrderEntity tradeOrder = OrderEntity.builder().orderNo("1").createTime(DateUtil.date()).build();
         OrderEntity tradeOrder1 = OrderEntity.builder().orderNo("2").createTime(DateUtil.date()).build();
+
         waitPayOrderList.add(tradeOrder);
         waitPayOrderList.add(tradeOrder1);
         int waitCount = 0;
@@ -90,6 +94,14 @@ public class OrderAsyncServiceImpl implements IOrderAsyncService {
         log.info("扫描结束...共发现待支付订单总数为：{}！已推入检查队列准备到期检查...记录时间：{}", waitCount, DateUtil.now());
     }
 
+    /**
+     * 指定自定义业务线程池
+     * Async注解默认线程池不开启限流机制，不断创建新的线程可能导致内存泄漏
+     * 但是开启限流机制，可以有效控制应用线程数，但是执行效率降低，出现主线程等待，线程竞争的情况
+     *
+     * @author yejx
+     * @date 2019/9/20 15:35
+     */
     @Override
     @Async("businessServiceExecutor")
     public void handleExpireOrderTask() {

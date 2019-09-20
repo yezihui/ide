@@ -33,6 +33,13 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!--Common组件-->
+        <dependency>
+            <groupId>com.yjx</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

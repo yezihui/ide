@@ -41,6 +41,7 @@
         <module>entity</module>
         <module>mongo</module>
         <module>solr</module>
+        <module>common</module>
     </modules>
 
     <!--组件插件管理库-->

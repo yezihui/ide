@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * <p>
- *
+ * aop Bean配置
  * </p>
  *
  * @author yejx

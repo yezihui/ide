@@ -50,7 +50,14 @@ public class OrderDelay implements Delayed {
         return unit.convert(this.activeTime - System.currentTimeMillis(), unit);
     }
 
-
+    /**
+     * 需要重写用于排序
+     *
+     * @param delayed 比较对象
+     * @return 0相等 -1当前对象小于比较对象 1当前对象大于比较对象
+     * @author yejx
+     * @date 2019/9/19 11:48
+     */
     @Override
     public int compareTo(Delayed delayed) {
         long excessTime = getDelay(TimeUnit.NANOSECONDS) - delayed.getDelay(TimeUnit.NANOSECONDS);
