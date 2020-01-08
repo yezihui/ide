@@ -1,4 +1,4 @@
-package cn.com.webtax.app.config;
+package com.yjx.web.config;
 
 import lombok.Data;
 

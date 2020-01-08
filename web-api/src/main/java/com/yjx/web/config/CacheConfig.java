@@ -1,58 +1,59 @@
-package cn.com.webtax.web.config;
+package com.yjx.web.config;
 
-import cn.com.webtax.cache.service.IAppUserInfoCacheService;
-import cn.com.webtax.cache.service.impl.AppUserInfoCacheServiceImpl;
+import cn.hutool.core.collection.CollUtil;
+import com.yjx.cache.handler.FastJson2JsonRedisSerializer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.cache.RedisCacheConfiguration;
-import org.springframework.data.redis.cache.RedisCacheManager;
-import org.springframework.data.redis.cache.RedisCacheWriter;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.RedisSerializationContext;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.RedisSerializer;
-
-import java.time.Duration;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * <p>
  * 缓存初始化配置
  * </p>
  *
- * @author Shawn Deng
- * @date 2019-05-13 20:33
+ * @author yejx
+ * @date 2019/12/18 15:31
  */
 @Configuration
 @Slf4j
-public class CacheConfig {
+public class CacheConfig extends CachingConfigurerSupport {
+
+    @Bean
+    public RedisSerializer fastJson2JsonRedisSerializer() {
+        return new FastJson2JsonRedisSerializer(Object.class);
+    }
+
+    @Bean
+    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory, RedisSerializer fastJson2JsonRedisSerializer) {
+        log.info("========>Redis默认配置");
+        RedisTemplate<String, Object> template = new RedisTemplate();
+        template.setConnectionFactory(factory);
+        template.setKeySerializer(new StringRedisSerializer());
+        template.setValueSerializer(fastJson2JsonRedisSerializer);
+        template.setHashKeySerializer(new StringRedisSerializer());
+        template.setHashValueSerializer(fastJson2JsonRedisSerializer);
+        template.afterPropertiesSet();
+        return template;
+    }
+
 
     /**
      * 缓存管理器
      */
     @Bean
-    public CacheManager cacheManager(RedisConnectionFactory redisConnectionFactory) {
-        //初始化一个RedisCacheWriter
-        RedisCacheWriter redisCacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(redisConnectionFactory);
-        //设置CacheManager的值序列化方式为json序列化
-        RedisSerializer<Object> jsonSerializer = new GenericJackson2JsonRedisSerializer();
-        RedisSerializationContext.SerializationPair<Object> pair = RedisSerializationContext.SerializationPair
-                .fromSerializer(jsonSerializer);
+    public CacheManager cacheManager(RedisConnectionFactory connectionFactory) {
+//        CacheItemConfig productCacheItemConfig = new CacheItemConfig();
+//        productCacheItemConfig.setName(QA_ORDER_PAGE);
+//        productCacheItemConfig.setExpiryTimeSecond(300);
+//        List<CacheItemConfig> cacheItemConfigs = Lists.newArrayList(productCacheItemConfig);
 
-        RedisCacheConfiguration defaultCacheConfig = RedisCacheConfiguration.defaultCacheConfig()
-                //如果是空值，不缓存
-                .disableCachingNullValues()
-                .serializeValuesWith(pair);
-        //设置默认超过期时间是1小时
-        defaultCacheConfig.entryTtl(Duration.ofHours(1));
-        //初始化RedisCacheManager
-        return RedisCacheManager.builder(redisCacheWriter).cacheDefaults(defaultCacheConfig).build();
-    }
-
-    @Bean
-    public IAppUserInfoCacheService iAppUserInfoCacheService(){
-        return new AppUserInfoCacheServiceImpl();
+        return new CustomizedRedisCacheManager(connectionFactory, CollUtil.newArrayList());
     }
 
 }

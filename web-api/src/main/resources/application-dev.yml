@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.202:3306/webtax_gather?autoReconnect=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 123456789
+  #redis配置
+  redis:
+    host: 192.168.1.202
+    port: 6379
+    database: 7
+    timeout: 30000
+    lettuce.pool.min-idle: 0
+    lettuce.pool.max-idle: 8
+    lettuce.pool.max-active: 8
+    lettuce.pool.max-wait: -1ms
+
+server:
+  port: 8089
+
+JwtTokenUtil:
+  jwtKey: safdsafdsafdsafd

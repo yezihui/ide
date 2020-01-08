@@ -1,6 +1,6 @@
-package cn.com.webtax.web.log.factory;
+package com.yjx.web.log.factory;
 
-import cn.com.webtax.common.context.SpringContextHolder;
+import com.yjx.common.context.SpringContextHolder;
 
 import java.util.TimerTask;
 import java.util.concurrent.Executor;
@@ -10,8 +10,8 @@ import java.util.concurrent.Executor;
  * 日志管理器
  * </p>
  *
- * @author Shawn Deng
- * @date 2018/11/7 14:08
+ * @author yejx
+ * @date 2019/12/3 16:51
  */
 public class LogManager {
 

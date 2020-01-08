@@ -1,5 +1,13 @@
-com\yjx\mongo\document\base\Test.class
-com\yjx\mongo\modular\base\repository\TestRepository.class
 com\yjx\mongo\config\DefaultMongoAutoConfiguration.class
+com\yjx\mongo\document\system\OperationLog$OperationLogBuilder.class
+com\yjx\mongo\modular\system\service\LoginLogService.class
+com\yjx\mongo\modular\system\repository\OperationLogRepository.class
+com\yjx\mongo\document\system\LoginLog.class
+com\yjx\mongo\modular\base\repository\TestRepository.class
+com\yjx\mongo\modular\system\repository\LoginLogRepository.class
+com\yjx\mongo\modular\system\service\OperationLogService.class
+com\yjx\mongo\document\system\OperationLog.class
 com\yjx\mongo\modular\base\service\TestService.class
+com\yjx\mongo\document\base\Test.class
 com\yjx\mongo\document\base\Test$TestBuilder.class
+com\yjx\mongo\document\system\LoginLog$LoginLogBuilder.class

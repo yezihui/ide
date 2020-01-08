@@ -2,21 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332a78a8-cfe9-4a1d-a2d5-7faed86e85f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/ThreadTaskConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.yjx.common.config/VisibleThreadPoolTaskExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/aop/ChainOnRequestHeaderAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/aop/ChainOnRequestHeaderAop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/bean/OrderDelay.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/bean/OrderDelay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/AopConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/AopConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/IOrderAsyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/IOrderAsyncService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/impl/OrderAsyncServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/impl/OrderAsyncServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/cache.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cache/cache.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cache/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/ChainOnRedisInitRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/ChainOnRedisInitRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/RedisAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/RedisAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/constants/RedisDirConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/constants/RedisDirConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/handler/FastJson2JsonRedisSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/handler/FastJson2JsonRedisSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/IDictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/IDictService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/RedisCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/RedisCacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/DictServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/DictServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/RedisCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/RedisCacheServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/cache/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/bean/JwtToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/bean/JwtToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/bean/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/bean/ResponseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/constants/RequestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/constants/RequestConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/context/SpringContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/context/SpringContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/enums/AbstractBaseExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/enums/AbstractBaseExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/enums/CoreExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/enums/CoreExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/util/HttpContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yjx/common/util/HttpContextUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/target/entity-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/entity-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/yjx/model/web/ro/LoginRo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/yjx/model/web/ro/LoginRo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/config/DefaultMongoAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/config/DefaultMongoAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/system/LoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/system/LoginLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/system/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/system/OperationLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/LoginLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/LoginLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/OperationLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/OperationLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/LoginLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/LoginLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/OperationLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/OperationLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/target/classes/META-INF/mongo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/target/classes/com/yjx/mongo/config/DefaultMongoAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/target/classes/com/yjx/mongo/config/DefaultMongoAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/target/classes/com/yjx/mongo/modular/base/service/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/target/classes/com/yjx/mongo/modular/base/service/TestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/target/mongo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/target/mongo-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/WebApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/WebApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/aop/ChainOnLoginLogAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/aop/ChainOnLoginLogAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/bean/WebLoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/bean/WebLoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/AopConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/AopConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheItemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheItemConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CustomizedRedisCacheManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CustomizedRedisCacheManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/Swagger2DocConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/Swagger2DocConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ThreadTaskConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ThreadTaskConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/constants/AuthConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/constants/AuthConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/WebLoginUserHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/WebLoginUserHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/enums/LogSucceed.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/enums/LogSucceed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/enums/LogType.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/enums/LogType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/LogObjectHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/LogObjectHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogTaskFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogTaskFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/service/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/service/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/util/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/util/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-api/src/test/java/com/yjx/web/WebApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-api/src/test/java/com/yjx/web/WebApiApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,14 +87,20 @@
     <ignored path="$PROJECT_DIR$/entity/target/" />
     <ignored path="$PROJECT_DIR$/mongo/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/web-api/target/" />
+    <ignored path="$PROJECT_DIR$/model/target/" />
+    <ignored path="$PROJECT_DIR$/cache/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -49,113 +117,18 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/bean/OrderDelay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1108">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-              <folding>
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/AopConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/IOrderAsyncService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/ChainOnOrderPayTaskRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/impl/OrderAsyncServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/handler/FastJson2JsonRedisSerializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+            <state relative-caret-position="650">
+              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/ThreadTaskConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com.yjx.common.config/VisibleThreadPoolTaskExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1573">
-              <caret line="71" column="5" selection-start-line="68" selection-start-column="70" selection-end-line="71" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -181,11 +154,38 @@
       <find>202</find>
       <find>TradeOrderEntity</find>
       <find>2018/10/13 16:59</find>
+      <find>@EqualsAndHashCode</find>
+      <find>@ToString</find>
+      <find>logger</find>
+      <find>Shawn Deng</find>
+      <find>2019-05-07 21:32</find>
+      <find>2019/12/3 16:51</find>
+      <find>cn.com.webtax.web.modular.auth.controller</find>
+      <find>X-Forwarded-For</find>
+      <find>8088</find>
+      <find>8089</find>
+      <find>ContextLoaderListener</find>
+      <find>SpringContextHolder</find>
+      <find>mongo</find>
+      <find>loginLogService.insert</find>
+      <find>/user/info</find>
+      <find>/info</find>
+      <find>LoginContext</find>
+      <find>redis</find>
+      <find>=</find>
+      <find>hutool</find>
     </findStrings>
     <replaceStrings>
       <replace>OrderEntity</replace>
       <replace>@author yejx</replace>
       <replace>2018/11/10 15:17</replace>
+      <replace>log</replace>
+      <replace>yejx</replace>
+      <replace>2019/12/3 16:51</replace>
+      <replace>2019-12-03 16:51</replace>
+      <replace>com.yjx.web.modular.auth.controller</replace>
+      <replace>loginLogRepository.save</replace>
+      <replace>:</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -194,49 +194,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/solr/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/solr/src/main/java/com/yjx/solr/controller/SolrController.java" />
-        <option value="$PROJECT_DIR$/solr/src/main/java/com/yjx/solr/SolrApplication.java" />
-        <option value="$PROJECT_DIR$/solr/pom.xml" />
-        <option value="$PROJECT_DIR$/solr/src/main/java/com/yjx/solr/model/Person.java" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/base/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/entity/pom.xml" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/base/BaseAbilityEntity.java" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service.java" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/BrowseRecord.java" />
-        <option value="$PROJECT_DIR$/app/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service/BaseAbilityService.java" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/repository/BaseAbilityRepository.java" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/base/BaseAbility.java" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/base/Test.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/DefaultMongoAutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/app/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/repository/TestRepository.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/service/TestService.java" />
-        <option value="$PROJECT_DIR$/mongo/pom.xml" />
-        <option value="$PROJECT_DIR$/mongo/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/repository/TestRepository.java" />
-        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/config/DefaultMongoAutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/service/AppTestService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/repository/AppTestRepository.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/AopConfig.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yjx/common/context/SpringContextHolder.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/SpringContextHolder.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ThreadTaskConfig.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogManager.java" />
+        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/TestService.java" />
+        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/TestRepository.java" />
+        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/LoginLog.java" />
+        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/LoginLogService.java" />
         <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service/TestService.java" />
+        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/config/DefaultMongoAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/OperationLogService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/ChainOnOrderPayTaskRunner.java" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/trade/OrderEntity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/AppApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/annotation/TokenValid.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/aop/ChainOnRequestHeaderAop.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/bean/OrderDelay.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/IOrderAsyncService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/AopConfig.java" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/app/pom.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com.yjx.common.config/VisibleThreadPoolTaskExecutor.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/ThreadTaskConfig.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/impl/OrderAsyncServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogTaskFactory.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/api.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/api/AbstractLoginUser.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/bean/WebLoginUser.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/LogObjectHolder.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/aop/ChainOnLoginLogAop.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/WebLoginUserHolder.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/ServiceException.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/enums/AbstractBaseExceptionEnum.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yjx/common/exception/enums/CoreExceptionEnum.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yjx/common/constants/RequestConstants.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginContext.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/service/impl/AuthServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/util/JwtTokenUtil.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ContextConfig.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/VisibleThreadPoolTaskExecutor.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/RedisCacheService.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/constants/RedisDirConstants.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/RedisCacheServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/ChainOnRedisInitRunner.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginUserService.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/IDictService.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/DictServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/RedisAutoConfig.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/service/IAuthService.java" />
+        <option value="$PROJECT_DIR$/cache/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheItemConfig.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yjx/common/handler/FastJson2JsonRedisSerializer.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheConfig.java" />
+        <option value="$PROJECT_DIR$/cache/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web-api/pom.xml" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/Swagger2DocConfig.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/WebApiApplication.java" />
+        <option value="$PROJECT_DIR$/web-api/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/web-api/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/handler/FastJson2JsonRedisSerializer.java" />
       </list>
     </option>
   </component>
@@ -245,155 +253,27 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.boot:spring-boot-starter-data-mongodb:2.0.1.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="entity" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ide" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ide" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mongo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mongo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="130" />
-    <option name="y" value="405" />
-    <option name="width" value="1940" />
-    <option name="height" value="1025" />
+    <option name="x" value="104" />
+    <option name="y" value="84" />
+    <option name="width" value="1040" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ide" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -405,28 +285,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com.yjx.common.config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web-api/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workSpace\yejx\ide\common\src\main\java\com\yjx\common\config" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.yjx.web" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yjx.app.config" />
-      <recent name="com.yjx.entity.trade" />
-      <recent name="com.yjx.app.task" />
-      <recent name="com.yjx.app.bean" />
-      <recent name="com.yjx.mongo.config" />
+      <recent name="com.yjx.web.config" />
+      <recent name="com.yjx.cache.config" />
+      <recent name="com.yjx.cache.constants" />
+      <recent name="com.yjx.cache.service" />
+      <recent name="com.yjx.common.constants" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workSpace\yejx\ide\common\src\main\java\com.yjx.common.config" />
-      <recent name="D:\workSpace\yejx\ide\mongo\src\main\resources" />
-      <recent name="D:\workSpace\yejx\ide\app\src\main\resources" />
-      <recent name="D:\workSpace\yejx\ide\app\src\main\java\com\yjx\app" />
-      <recent name="D:\workSpace\yejx\ide\mongo\src\main\resources\META-INF" />
+      <recent name="D:\workSpace\yejx\ide\web-api\src\main\resources" />
+      <recent name="D:\workSpace\yejx\ide\web-api\src\main\java\com\yjx\web\config" />
+      <recent name="D:\workSpace\yejx\ide\web-api\src\main\java\com\yjx\web\modular\base" />
+      <recent name="D:\workSpace\yejx\ide\cache\src\main\resources" />
+      <recent name="D:\workSpace\yejx\ide\cache\src\main\java\com\yjx\cache" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -447,7 +334,7 @@
     </option>
     <option name="contentProportion" value="0.21915585" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AppApplication">
+  <component name="RunManager" selected="Maven.dev">
     <configuration name="dev" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -501,11 +388,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yjx.web.WebApiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Maven.dev" />
       <item itemvalue="Spring Boot.AppApplication" />
       <item itemvalue="Spring Boot.SolrApplication" />
+      <item itemvalue="Spring Boot.WebApiApplication" />
     </list>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -518,11 +419,19 @@
       <option name="presentableId" value="Default" />
       <updated>1568687011022</updated>
       <workItem from="1568687014492" duration="37483000" />
+      <workItem from="1574912259899" duration="1693000" />
+      <workItem from="1575338925870" duration="28443000" />
+      <workItem from="1575947425238" duration="599000" />
+      <workItem from="1576203166236" duration="5011000" />
+      <workItem from="1576460760031" duration="9815000" />
+      <workItem from="1576823888152" duration="271000" />
+      <workItem from="1576824615980" duration="2540000" />
+      <workItem from="1578468975956" duration="252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37483000" />
+    <option name="totallyTimeSpent" value="86107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,9 +443,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="405" width="1940" height="1025" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49665925" visible="true" weight="0.17925532" />
+      <window_info id="JRebel" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49665925" visible="true" weight="0.22297297" />
       <window_info id="Alibaba Cloud Explorer" order="1" weight="0.32995737" />
       <window_info id="Structure" order="2" sideWeight="0.5033408" side_tool="true" weight="0.22654584" />
       <window_info id="Designer" order="3" />
@@ -545,38 +455,41 @@
       <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" weight="0.32925472" />
+      <window_info anchor="bottom" id="JRebel Executor" />
+      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.33704117" />
       <window_info anchor="bottom" id="Spring" order="5" weight="0.32814237" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32814237" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32750398" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32962137" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.46268657" side_tool="true" weight="0.31625834" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.2669633" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.46268657" side_tool="true" weight="0.3160323" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.2341338" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" weight="0.32962137" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49946696" weight="0.30734965" />
-      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.49946696" weight="0.6295884" />
-      <window_info anchor="bottom" id="Debug" order="15" weight="0.47608453" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.53731346" weight="0.42714128" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49946696" visible="true" weight="0.42925277" />
+      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.49946696" weight="0.59618443" />
+      <window_info anchor="bottom" id="Debug" order="15" weight="0.4753577" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.53731346" weight="0.4689984" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.32962137" />
-      <window_info anchor="right" id="Alibaba Log Console" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.35127932" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Mybatis datasource" order="6" side_tool="true" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32889125" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="18" weight="0.32925472" />
+      <window_info anchor="right" id="Maven" order="0" weight="0.3505319" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="1" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Mybatis datasource" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32889125" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Alibaba Log Console" order="13" />
     </layout>
     <layout-to-restore>
       <window_info id="Alibaba Cloud Explorer" order="0" />
@@ -650,410 +563,429 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/controller/TestController.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service/TestService.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/aop/ChainOnLoginLogAop.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/controller/AuthController.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/aop/ChainOnLoginLogAop.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/OperationLogRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solr/pom.xml">
+    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/repository/LoginLogRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/LoginLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/system/service/OperationLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/bean/JwtToken.java" />
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/constants/RequestConstants.java" />
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/bean/ResponseData.java" />
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/VisibleThreadPoolTaskExecutor.java" />
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/RedisCacheService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/ChainOnRedisInitRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/aop/ChainOnLoginLogAop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="113" column="72" selection-start-line="113" selection-start-column="72" selection-end-line="113" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/LogObjectHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/WebLoginUserHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/RedisCacheServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.6.RELEASE/spring-data-redis-2.0.6.RELEASE.jar!/org/springframework/data/redis/core/BoundListOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/config/RedisAutoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/service/impl/AuthServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/service/IAuthService.java" />
+    <entry file="file://$PROJECT_DIR$/cache/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-236">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2326#2327#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/base/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/IDictService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/service/impl/DictServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="33" column="90" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/constants/RedisDirConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheItemConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="24" column="21" selection-start-line="19" selection-start-column="7" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/util/JwtTokenUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="600">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/yjx/entity.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/log/factory/LogTaskFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/Test.java">
+    <entry file="file://$PROJECT_DIR$/web-api/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="550">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solr/src/main/java/com/yjx/solr/model/Person.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/service/impl/AuthServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/context/LoginContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/modular/auth/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/HELP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/base/BaseEntity.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="125">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solr/src/main/java/com/yjx/solr/SolrApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/base/BaseAbilityEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/BrowseRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" selection-start-line="20" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.6.RELEASE/spring-data-mongodb-2.0.6.RELEASE.jar!/org/springframework/data/mongodb/core/mapping/Document.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.6.RELEASE/spring-data-mongodb-2.0.6.RELEASE.jar!/org/springframework/data/mongodb/repository/MongoRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solr/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solr/src/main/java/com/yjx/solr/controller/SolrController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.6.RELEASE/spring-data-mongodb-2.0.6.RELEASE.jar!/org/springframework/data/mongodb/core/MongoTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="135" column="13" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.1.RELEASE/spring-boot-autoconfigure-2.0.1.RELEASE.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-start-column="1" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/DefaultMongoAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-mongodb/2.0.1.RELEASE/spring-boot-starter-data-mongodb-2.0.1.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/document/base/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/resources/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/config/DefaultMongoAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/repository/TestRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/service/AppTestService.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/repository/AppTestRepository.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/java/com/yjx/mongo/modular/base/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/yjx/entity/trade/OrderEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/AppApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/annotation/TokenValid.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="350">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Comparable.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/WebApiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
+        <state relative-caret-position="350">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/DelayQueue.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CacheConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/Delayed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/aop/ChainOnRequestHeaderAop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="75" column="24" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="24" />
+        <state relative-caret-position="256">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/bean/OrderDelay.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ContextConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1108">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/IOrderAsyncService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/ChainOnOrderPayTaskRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com.yjx.common.config/VisibleThreadPoolTaskExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1573">
-          <caret line="71" column="5" selection-start-line="68" selection-start-column="70" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="429">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/AopConfig.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/CustomizedRedisCacheManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="296">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/ThreadTaskConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/config/ThreadTaskConfig.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/constants/AuthConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="646">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/task/impl/OrderAsyncServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/web-api/src/main/java/com/yjx/web/config/Swagger2DocConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+        <state relative-caret-position="1027">
+          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yjx/app/modular/base/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/main/java/com/yjx/cache/handler/FastJson2JsonRedisSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1110,7 +1042,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mongo</last-edited>
+          <last-edited>cache</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

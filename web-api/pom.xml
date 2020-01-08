@@ -18,6 +18,13 @@
     </properties>
 
     <dependencies>
+        <!--redis组件-->
+        <dependency>
+            <groupId>com.yjx</groupId>
+            <artifactId>cache</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!--Mongo组件-->
         <dependency>
             <groupId>com.yjx</groupId>
@@ -40,6 +47,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.yjx</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -47,7 +60,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -105,6 +117,33 @@
             <artifactId>core</artifactId>
             <version>3.3.3</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <!--可选,swagger在线文档插件-->
+        <!--引入后需在application.yml设置swagger.enabled=true方可生效-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

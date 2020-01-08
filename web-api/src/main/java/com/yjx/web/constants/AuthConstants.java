@@ -1,12 +1,12 @@
-package cn.com.webtax.common.constants;
+package com.yjx.web.constants;
 
 /**
  * <p>
  * 鉴权相关的常量
  * </p>
  *
- * @author Shawn Deng
- * @date 2018/11/4 16:41
+ * @author yejx
+ * @date 2019/12/3 10:53
  */
 public interface AuthConstants {
 

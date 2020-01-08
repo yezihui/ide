@@ -1,4 +1,4 @@
-package com.yjx.mongo.modular.system;
+package com.yjx.mongo.modular.system.repository;
 
 import com.yjx.mongo.document.system.OperationLog;
 import org.springframework.data.mongodb.repository.MongoRepository;

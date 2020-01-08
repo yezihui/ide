@@ -1,6 +1,6 @@
-package cn.com.webtax.web.config;
+package com.yjx.web.config;
 
-import cn.com.webtax.common.config.VisibleThreadPoolTaskExecutor;
+import com.yjx.common.config.VisibleThreadPoolTaskExecutor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,8 +15,8 @@ import java.util.concurrent.ThreadPoolExecutor;
  * 异步线程池支持配置
  * </p>
  *
- * @author Shawn Deng
- * @date 2018/11/10 15:32
+ * @author yejx
+ * @date 2019/12/4 11:45
  */
 @Configuration
 @EnableAsync

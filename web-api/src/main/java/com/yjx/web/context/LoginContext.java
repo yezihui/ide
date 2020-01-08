@@ -1,18 +1,16 @@
-package cn.com.webtax.web.context;
+package com.yjx.web.context;
 
-import cn.com.webtax.common.context.SpringContextHolder;
-import cn.com.webtax.web.api.ILoginContext;
-import cn.com.webtax.web.api.WebLoginUserHolder;
-import cn.com.webtax.web.bean.WebLoginUser;
-import com.shawn.cloud.springboot.common.exception.ServiceException;
-import com.shawn.cloud.springboot.core.util.HttpContextUtil;
+import com.yjx.common.context.SpringContextHolder;
+import com.yjx.common.exception.ServiceException;
+import com.yjx.common.util.HttpContextUtil;
+import com.yjx.web.bean.WebLoginUser;
 import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
-import static cn.com.webtax.common.constants.RequestConstants.HEADER_TOKEN;
-import static com.shawn.cloud.springboot.core.exception.enums.CoreExceptionEnum.*;
+import static com.yjx.common.constants.RequestConstants.HEADER_TOKEN;
+import static com.yjx.common.exception.enums.CoreExceptionEnum.*;
 
 /**
  * <p>
@@ -22,7 +20,7 @@ import static com.shawn.cloud.springboot.core.exception.enums.CoreExceptionEnum.
  * @author Shawn Deng
  * @date 2019-06-25 17:04
  */
-public class LoginContext implements ILoginContext {
+public class LoginContext {
 
     private LoginUserService loginUserService;
 
@@ -47,7 +45,6 @@ public class LoginContext implements ILoginContext {
      * 先判断header中是否有Authorization字段，
      * 如果header中没有这个字段，则抛出没有登录用户异常
      */
-    @Override
     public String getCurrentUserToken() {
         HttpServletRequest request = HttpContextUtil.getRequest();
         if (request == null) {
@@ -74,7 +71,6 @@ public class LoginContext implements ILoginContext {
      * @author Shawn Deng
      * @date 2018/10/24 17:15
      */
-    @Override
     public void checkToken() {
         String token = getCurrentUserToken();
         if (!loginUserService.checkToken(token)) {
@@ -92,7 +88,6 @@ public class LoginContext implements ILoginContext {
      * @author Shawn Deng
      * @date 2018/10/24 17:16
      */
-    @Override
     public WebLoginUser getLoginUser() {
         WebLoginUser currentUser = WebLoginUserHolder.get();
         return Optional.ofNullable(currentUser).orElseGet(() -> {

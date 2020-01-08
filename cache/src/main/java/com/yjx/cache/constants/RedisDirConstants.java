@@ -1,12 +1,12 @@
-package cn.com.webtax.cache.constants;
+package com.yjx.cache.constants;
 
 /**
  * <p>
  * Redis目录常量
  * </p>
  *
- * @author Shawn Deng
- * @date 2019-05-13 21:09
+ * @author yejx
+ * @date 2019-12-13 11:17
  */
 public interface RedisDirConstants {
 

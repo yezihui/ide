@@ -1,19 +1,19 @@
-package cn.com.webtax.web.log.factory;
+package com.yjx.web.log.factory;
 
-import cn.com.webtax.mongo.document.modular.system.LoginLog;
-import cn.com.webtax.mongo.document.modular.system.OperationLog;
-import cn.com.webtax.web.enums.LogSucceed;
-import cn.com.webtax.web.enums.LogType;
 import cn.hutool.core.date.DateUtil;
+import com.yjx.mongo.document.system.LoginLog;
+import com.yjx.mongo.document.system.OperationLog;
+import com.yjx.web.enums.LogSucceed;
+import com.yjx.web.enums.LogType;
 
-/**
- * <p>
+/** 
+ * <p> 
  * 日志构建工厂
- * </p>
+ * </p> 
  *
- * @author Shawn Deng
- * @date 2018/11/7 14:06
- */
+ * @author yejx 
+ * @date 2019/12/3 16:45
+ */ 
 public class LogFactory {
 
     /**

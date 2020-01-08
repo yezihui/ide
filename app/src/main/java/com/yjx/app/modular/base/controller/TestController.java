@@ -1,9 +1,10 @@
 package com.yjx.app.modular.base.controller;
 
 import com.yjx.entity.base.BaseAbilityEntity;
-import com.yjx.mongo.document.base.Test;
+import com.yjx.mongo.document.system.LoginLog;
 import com.yjx.mongo.modular.base.repository.TestRepository;
 import com.yjx.mongo.modular.base.service.TestService;
+import com.yjx.mongo.modular.system.service.LoginLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +28,12 @@ public class TestController {
     @Resource
     private TestRepository testRepository;
 
+    @Autowired
+    private LoginLogService loginLogService;
+
+//    @Resource
+//    private static LoginLogRepository loginLogRepository;
+
     @GetMapping("/")
     public String home() {
         return "Spring is here!";
@@ -34,14 +41,13 @@ public class TestController {
 
     @GetMapping("/save")
     public String test() {
-        Test test = Test.builder()
-                .createTime(System.currentTimeMillis())
-                .Id("id3")
-                .userId(3L)
-                .userName("name3")
-                .userTypeCode(3)
-                .userTypeName("type3").build();
-        testRepository.save(test);
+        LoginLog loginLog = new LoginLog();
+        loginLog.setIpAddress("192.168.1.111");
+        loginLog.setLogName("login");
+        loginLog.setMessage("登录");
+        loginLog.setRequestNo("23");
+        loginLog.setSucceed("ssss");
+//        loginLogRepository.save(loginLog);
         return "success";
     }
 
@@ -55,7 +61,12 @@ public class TestController {
 
     @GetMapping("/insertMongo")
     public void insertMongo() {
-        testService.insert();
-        testService.update();
+        LoginLog loginLog = new LoginLog();
+        loginLog.setIpAddress("192.168.1.111");
+        loginLog.setLogName("login");
+        loginLog.setMessage("登录");
+        loginLog.setRequestNo("23");
+        loginLog.setSucceed("ssss");
+        loginLogService.insert(loginLog);
     }
 }

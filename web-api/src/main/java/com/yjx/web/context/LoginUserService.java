@@ -1,10 +1,10 @@
-package cn.com.webtax.web.context;
+package com.yjx.web.context;
 
-import cn.com.webtax.web.bean.WebLoginUser;
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
-import com.shawn.cloud.springboot.common.exception.ServiceException;
-import com.shawn.cloud.springboot.jwt.util.JwtTokenUtil;
+import com.yjx.common.exception.ServiceException;
+import com.yjx.web.bean.WebLoginUser;
+import com.yjx.web.util.JwtTokenUtil;
 import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -14,8 +14,8 @@ import java.util.Date;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
-import static cn.com.webtax.cache.constants.RedisDirConstants.WEB_LOGIN_USER_TOKEN_PREFIX;
-import static com.shawn.cloud.springboot.core.exception.enums.CoreExceptionEnum.TOKEN_ILLEGAL;
+import static com.yjx.cache.constants.RedisDirConstants.WEB_LOGIN_USER_TOKEN_PREFIX;
+import static com.yjx.common.exception.enums.CoreExceptionEnum.TOKEN_ILLEGAL;
 
 /**
  * <p>
@@ -29,21 +29,21 @@ import static com.shawn.cloud.springboot.core.exception.enums.CoreExceptionEnum.
 public class LoginUserService {
 
     @Resource
-    private RedisTemplate<String, WebLoginUser> redisTemplate;
+    private JwtTokenUtil jwtTokenUtil;
 
     @Resource
-    private JwtTokenUtil jwtTokenUtil;
+    private RedisTemplate<String, WebLoginUser> redisTemplate;
 
     /**
      * 生成TOKEN
      *
      * @param id 业务系统登录用户的ID,唯一标识
      * @return token
-     * @author Shawn Deng
-     * @date 2018/10/15 14:26
+     * @author yejx
+     * @date 2019/12/5 17:59
      */
     public String generateToken(Long id) {
-        return jwtTokenUtil.generateToken(id.toString(), "webtax.com.cn", null);
+        return jwtTokenUtil.createJwtById(id.toString(), null);
     }
 
     /**
@@ -94,15 +94,12 @@ public class LoginUserService {
         if (!jwtTokenUtil.checkToken(token)) {
             throw new ServiceException(TOKEN_ILLEGAL);
         }
-
         //校验是否过期
         if (jwtTokenUtil.isTokenExpired(token)) {
             throw new ServiceException(TOKEN_ILLEGAL);
         }
-
         //jwt 唯一标识
         String jwtId = jwtTokenUtil.getJwtIdFromToken(token);
-
         //校验缓存是否有token,并且校验是否与当前token同步
         BoundValueOperations<String, WebLoginUser> opts = redisTemplate.boundValueOps(WEB_LOGIN_USER_TOKEN_PREFIX + jwtId);
         WebLoginUser webLoginUser = opts.get();
@@ -127,15 +124,12 @@ public class LoginUserService {
         if (!jwtTokenUtil.checkToken(token)) {
             return false;
         }
-
         //校验是否过期
         if (jwtTokenUtil.isTokenExpired(token)) {
             throw new ServiceException(TOKEN_ILLEGAL);
         }
-
         //jwt 唯一标识
         String jwtId = jwtTokenUtil.getJwtIdFromToken(token);
-
         //校验缓存是否有token
         BoundValueOperations<String, WebLoginUser> opts = redisTemplate.boundValueOps(WEB_LOGIN_USER_TOKEN_PREFIX + jwtId);
         WebLoginUser loginUser = opts.get();

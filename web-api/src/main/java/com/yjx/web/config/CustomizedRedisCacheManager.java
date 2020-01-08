@@ -1,4 +1,4 @@
-package cn.com.webtax.app.config;
+package com.yjx.web.config;
 
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;

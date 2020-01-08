@@ -1,51 +1,50 @@
-package cn.com.webtax.web.log.factory;
+package com.yjx.web.log.factory;
 
-import cn.com.webtax.common.context.SpringContextHolder;
-import cn.com.webtax.mongo.document.modular.system.LoginLog;
-import cn.com.webtax.mongo.document.modular.system.OperationLog;
-import cn.com.webtax.mongo.modular.system.repository.LoginLogRepository;
-import cn.com.webtax.mongo.modular.system.repository.OperationLogRepository;
-import cn.com.webtax.web.enums.LogSucceed;
-import cn.com.webtax.web.enums.LogType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.yjx.mongo.document.system.LoginLog;
+import com.yjx.mongo.document.system.OperationLog;
+import com.yjx.mongo.modular.system.repository.LoginLogRepository;
+import com.yjx.mongo.modular.system.repository.OperationLogRepository;
+import com.yjx.common.context.SpringContextHolder;
+import com.yjx.web.enums.LogSucceed;
+import com.yjx.web.enums.LogType;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.TimerTask;
 
-/**
- * <p>
- * 日志操作任务创建工厂
- * </p>
+/** 
+ * <p> 
+ * 日志操作任务创建工厂 
+ * </p> 
  *
- * @author Shawn Deng
- * @date 2018/11/7 15:21
- */
+ * @author yejx 
+ * @date 2019-12-03 16:51
+ */ 
+@Slf4j
 public class LogTaskFactory {
 
-    private static Logger logger = LoggerFactory.getLogger(LogManager.class);
     private static LoginLogRepository loginLogRepository = SpringContextHolder.getBean(LoginLogRepository.class);
+
     private static OperationLogRepository operationLogRepository = SpringContextHolder.getBean(OperationLogRepository.class);
 
     /**
      * 创建登录日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-14 12:48
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask loginSuccessLog(String requestNo, String ipAddress, String message) {
-
         return new TimerTask() {
             @Override
             public void run() {
                 LoginLog loginLog = LogFactory.createLoginLog(LogType.LOGIN, requestNo, LogSucceed.SUCCESS, ipAddress, message);
                 try {
-                    loginLogRepository.insert(loginLog);
+                    loginLogRepository.save(loginLog);
                 } catch (Exception e) {
-                    logger.error("创建登录日志异常!", e);
+                    log.error("创建登录日志异常!", e);
                 }
             }
         };
@@ -55,8 +54,8 @@ public class LogTaskFactory {
      * 创建登录失败日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-14 12:48
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask loginFailLog(String requestNo, String ipAddress, String message) {
 
@@ -65,9 +64,9 @@ public class LogTaskFactory {
             public void run() {
                 LoginLog loginLog = LogFactory.createLoginLog(LogType.LOGIN_FAIL, requestNo, LogSucceed.FAIL, ipAddress, message);
                 try {
-                    loginLogRepository.insert(loginLog);
+                    loginLogRepository.save(loginLog);
                 } catch (Exception e) {
-                    logger.error("创建登录日志异常!", e);
+                    log.error("创建登录日志异常!", e);
                 }
             }
         };
@@ -77,8 +76,8 @@ public class LogTaskFactory {
      * 创建获取用户权限失败资源日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-14 12:48
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask resourceLog(String requestNo, String ipAddress, String message) {
 
@@ -87,9 +86,9 @@ public class LogTaskFactory {
             public void run() {
                 LoginLog loginLog = LogFactory.createLoginLog(LogType.GET_USER_INFO_FAIL, requestNo, LogSucceed.FAIL, ipAddress, message);
                 try {
-                    loginLogRepository.insert(loginLog);
+                    loginLogRepository.save(loginLog);
                 } catch (Exception e) {
-                    logger.error("创建登录日志异常!", e);
+                    log.error("创建登录日志异常!", e);
                 }
             }
         };
@@ -99,8 +98,8 @@ public class LogTaskFactory {
      * 创建注销登录日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-14 12:48
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask logoutSuccessLog(String requestNo, String ipAddress, String message) {
 
@@ -109,9 +108,9 @@ public class LogTaskFactory {
             public void run() {
                 LoginLog loginLog = LogFactory.createLoginLog(LogType.LOGOUT, requestNo, LogSucceed.SUCCESS, ipAddress, message);
                 try {
-                    loginLogRepository.insert(loginLog);
+                    loginLogRepository.save(loginLog);
                 } catch (Exception e) {
-                    logger.error("创建登录日志异常!", e);
+                    log.error("创建登录日志异常!", e);
                 }
             }
         };
@@ -121,8 +120,8 @@ public class LogTaskFactory {
      * 创建注销登录失败日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-14 12:48
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask logoutFailLog(String requestNo, String ipAddress, String message) {
 
@@ -131,9 +130,9 @@ public class LogTaskFactory {
             public void run() {
                 LoginLog loginLog = LogFactory.createLoginLog(LogType.LOGOUT, requestNo, LogSucceed.FAIL, ipAddress, message);
                 try {
-                    loginLogRepository.insert(loginLog);
+                    loginLogRepository.save(loginLog);
                 } catch (Exception e) {
-                    logger.error("创建登录日志异常!", e);
+                    log.error("创建登录日志异常!", e);
                 }
             }
         };
@@ -143,8 +142,8 @@ public class LogTaskFactory {
      * 创建业务操作日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-13 19:42
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask businessLog(String businessName, String requestNo, String operationName, String className, String method,
                                         String requestUrl, String requestParams, String message,
@@ -159,7 +158,7 @@ public class LogTaskFactory {
                 try {
                     operationLogRepository.insert(sysLog);
                 } catch (Exception e) {
-                    logger.error("创建操作日志异常!", e);
+                    log.error("创建操作日志异常!", e);
                 }
             }
         };
@@ -169,8 +168,8 @@ public class LogTaskFactory {
      * 创建业务操作异常日志
      *
      * @return TimerTask
-     * @author Shawn Deng
-     * @date 2019-04-13 19:42
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     public static TimerTask exceptionLog(String businessName, String requestNo, String operationName, String className, String method,
                                          String requestUrl, String requestParams,
@@ -186,7 +185,7 @@ public class LogTaskFactory {
                 try {
                     operationLogRepository.insert(sysLog);
                 } catch (Exception e) {
-                    logger.error("创建操作日志异常!", e);
+                    log.error("创建操作日志异常!", e);
                 }
             }
         };
@@ -197,8 +196,8 @@ public class LogTaskFactory {
      *
      * @param e 异常
      * @return 信息
-     * @author Shawn Deng
-     * @date 2019-05-07 21:32
+     * @author yejx
+     * @date 2019-12-03 16:51
      */
     private static String getExceptionMsg(Throwable e) {
         StringWriter sw = new StringWriter();

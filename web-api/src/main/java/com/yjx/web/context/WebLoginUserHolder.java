@@ -1,6 +1,6 @@
-package cn.com.webtax.web.api;
+package com.yjx.web.context;
 
-import cn.com.webtax.web.bean.WebLoginUser;
+import com.yjx.web.bean.WebLoginUser;
 
 /**
  * <p>

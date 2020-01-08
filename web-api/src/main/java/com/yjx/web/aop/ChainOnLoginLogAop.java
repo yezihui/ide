@@ -1,18 +1,20 @@
-package cn.com.webtax.web.aop;
+package com.yjx.web.aop;
 
-import cn.com.webtax.web.bean.WebLoginUser;
-import cn.com.webtax.web.log.LogObjectHolder;
-import cn.com.webtax.web.log.factory.LogManager;
-import cn.com.webtax.web.log.factory.LogTaskFactory;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.exceptions.ExceptionUtil;
 import cn.hutool.core.util.StrUtil;
-import com.shawn.cloud.springboot.core.constants.Constants;
-import com.shawn.cloud.springboot.core.util.HttpContextUtil;
+import com.yjx.common.util.HttpContextUtil;
+import com.yjx.model.web.ro.LoginRo;
+import com.yjx.web.bean.WebLoginUser;
+import com.yjx.web.log.LogObjectHolder;
+import com.yjx.web.log.factory.LogManager;
+import com.yjx.web.log.factory.LogTaskFactory;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -21,8 +23,8 @@ import javax.servlet.http.HttpServletRequest;
  * 记录登录日志AOP
  * </p>
  *
- * @author Shawn Deng
- * @date 2019-04-13 20:33
+ * @author yejx
+ * @date 2019/12/3 16:53
  */
 @Aspect
 @Slf4j
@@ -39,40 +41,40 @@ public class ChainOnLoginLogAop {
     /**
      * 拦截AuthController类的login方法
      */
-    @Pointcut(value = "execution(* cn.com.webtax.web.modular.auth.controller.AuthController.login(..))")
+    @Pointcut(value = "execution(* com.yjx.web.modular.auth.controller.AuthController.login(..))")
     public void cutLoginService() {
     }
 
     /**
      * 拦截AuthController类的logout方法
      */
-    @Pointcut(value = "execution(* cn.com.webtax.web.modular.auth.controller.AuthController.logout(..))")
+    @Pointcut(value = "execution(* com.yjx.web.modular.auth.controller.AuthController.logout(..))")
     public void cutLogoutService() {
     }
 
     /**
      * 拦截AuthController类的resources方法
      */
-    @Pointcut(value = "execution(* cn.com.webtax.web.modular.auth.controller.AuthController.resources(..))")
+    @Pointcut(value = "execution(* com.yjx.web.modular.auth.controller.AuthController.resources(..))")
     public void cutResourceService() {
 
     }
 
     @Around("cutLoginService()")
     public Object loginAround(ProceedingJoinPoint point) throws Throwable {
-        //初始化临时保存器
         if (log.isDebugEnabled()) {
             log.debug("初始化临时保存器");
         }
-        //临时保存器
+        // 初始化临时保存器
         LogObjectHolder.init();
         HandleConfigurer configurer = build();
         try {
+            // 上述之前执行
             Object result = point.proceed();
             if (log.isDebugEnabled()) {
                 log.debug("请求登录成功");
             }
-            //登录成功备注
+            // 登录成功备注
             String userName = (String) LogObjectHolder.get();
             String message = StrUtil.format("【{}】登录系统", userName);
             log.info("异步线程插入登录日志....记录时间:{}", DateUtil.now());
@@ -98,11 +100,9 @@ public class ChainOnLoginLogAop {
 
     @Around("cutLogoutService()")
     public Object logoutAround(ProceedingJoinPoint point) throws Throwable {
-        //初始化临时保存器
         if (log.isDebugEnabled()) {
             log.debug("初始化临时保存器");
         }
-        //临时保存器
         LogObjectHolder.init();
         HandleConfigurer configurer = build();
         try {
@@ -122,10 +122,8 @@ public class ChainOnLoginLogAop {
             if (log.isDebugEnabled()) {
                 log.debug("请求退出登录失败");
             }
-            //非法注销登录失败备注
             WebLoginUser webLoginUser = (WebLoginUser) LogObjectHolder.get();
             if (webLoginUser != null) {
-                // 非法注销登录不记录失败日志
                 String exceptMsg = ExceptionUtil.getSimpleMessage(throwable);
                 String message = StrUtil.format("【{}】退出系统失败,原因:【{}】", webLoginUser.getUserName(), exceptMsg);
                 log.info("异步线程插入注销登录失败日志....记录时间:{}", DateUtil.now());
@@ -161,7 +159,6 @@ public class ChainOnLoginLogAop {
             }
             WebLoginUser webLoginUser = (WebLoginUser) LogObjectHolder.get();
             if (webLoginUser != null) {
-                // 非法注销登录不记录失败日志
                 String exceptMsg = ExceptionUtil.getSimpleMessage(throwable);
                 String message = StrUtil.format("【{}】获取权限失败,原因:【{}】", webLoginUser.getUserName(), exceptMsg);
                 log.info("异步线程插入获取权限资源失败日志....记录时间:{}", DateUtil.now());
@@ -185,7 +182,7 @@ public class ChainOnLoginLogAop {
         HttpServletRequest request = HttpContextUtil.getRequest();
         HandleConfigurer configurer = new HandleConfigurer();
         // 唯一请求号
-        configurer.setRequestNo(HttpContextUtil.getResponse().getHeader(Constants.REQUEST_NO_HEADER_NAME));
+        configurer.setRequestNo(HttpContextUtil.getResponse().getHeader("Request-No"));
         // 客户端请求真实IP
         configurer.setRequestIp(HttpContextUtil.getIPAddress(request));
         return configurer;

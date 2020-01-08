@@ -1,3 +1,3 @@
 # AutoConfiguration
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-cn.com.webtax.cache.config.RedisAutoConfig
+com.yjx.cache.config.RedisAutoConfig

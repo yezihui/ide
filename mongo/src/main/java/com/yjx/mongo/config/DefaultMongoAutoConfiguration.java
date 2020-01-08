@@ -1,6 +1,8 @@
 package com.yjx.mongo.config;
 
 import com.yjx.mongo.modular.base.service.TestService;
+import com.yjx.mongo.modular.system.service.LoginLogService;
+import com.yjx.mongo.modular.system.service.OperationLogService;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,5 +26,17 @@ public class DefaultMongoAutoConfiguration {
     @ConditionalOnMissingBean
     public TestService testService() {
         return new TestService();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public LoginLogService loginLogService() {
+        return new LoginLogService();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public OperationLogService operationLogService() {
+        return new OperationLogService();
     }
 }

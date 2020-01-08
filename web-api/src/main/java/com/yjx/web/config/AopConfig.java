@@ -1,7 +1,6 @@
-package cn.com.webtax.web.config;
+package com.yjx.web.config;
 
-import cn.com.webtax.web.aop.ChainOnLoginLogAop;
-import cn.com.webtax.web.aop.ChainOnOperationLogAop;
+import com.yjx.web.aop.ChainOnLoginLogAop;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
  * AOP拦截日志配置,开发环境关闭日志写入提高开发效率
  * </p>
  *
- * @author Shawn Deng
- * @date 2018/11/7 13:56
+ * @author yejx
+ * @date 2019/12/3 17:42
  */
 @Configuration
 public class AopConfig {
@@ -21,8 +20,8 @@ public class AopConfig {
         return new ChainOnLoginLogAop();
     }
 
-    @Bean
-    public ChainOnOperationLogAop chainOnOperationLogAop() {
-        return new ChainOnOperationLogAop();
-    }
+//    @Bean
+//    public ChainOnOperationLogAop chainOnOperationLogAop() {
+//        return new ChainOnOperationLogAop();
+//    }
 }

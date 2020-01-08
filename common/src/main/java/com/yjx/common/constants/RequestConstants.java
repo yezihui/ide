@@ -1,13 +1,13 @@
-package cn.com.webtax.common.constants;
+package com.yjx.common.constants;
 
-/**
- * <p>
+/** 
+ * <p> 
  * 请求头变量
- * </p>
+ * </p> 
  *
- * @author Shawn Deng
- * @date 2018/10/17 20:14
- */
+ * @author yejx 
+ * @date 2019/12/5 17:07
+ */ 
 public interface RequestConstants {
 
     /**

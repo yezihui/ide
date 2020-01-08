@@ -1,4 +1,10 @@
+D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\modular\system\service\OperationLogService.java
+D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\modular\system\repository\OperationLogRepository.java
 D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\modular\base\service\TestService.java
+D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\modular\system\service\LoginLogService.java
 D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\config\DefaultMongoAutoConfiguration.java
 D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\document\base\Test.java
+D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\document\system\LoginLog.java
+D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\document\system\OperationLog.java
 D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\modular\base\repository\TestRepository.java
+D:\workSpace\yejx\ide\mongo\src\main\java\com\yjx\mongo\modular\system\repository\LoginLogRepository.java

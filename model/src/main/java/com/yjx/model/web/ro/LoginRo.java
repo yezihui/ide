@@ -1,4 +1,4 @@
-package cn.com.webtax.model.web.ro;
+package com.yjx.model.web.ro;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -7,13 +7,13 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-/**
- * <p>
+/** 
+ * <p> 
  * 请求登录参数
- * </p>
+ * </p> 
  *
- * @author Shawn Deng
- * @date 2018/10/31 13:51
+ * @author yejx 
+ * @date 2019/12/3 10:52
  */
 @Data
 @ApiModel("请求登录参数")

@@ -1,12 +1,12 @@
-package cn.com.webtax.web.enums;
+package com.yjx.web.enums;
 
 /**
  * <p>
  * 日志类型
  * </p>
  *
- * @author Shawn Deng
- * @date 2019-04-13 19:26
+ * @author yejx
+ * @date 2019/12/3 16:46
  */
 public enum LogType {
 

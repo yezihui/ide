@@ -1,74 +1,77 @@
-package com.kimed.insuranceplatform.common.security;
+package com.yjx.web.util;
 
-import java.security.Key;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
-import javax.crypto.spec.SecretKeySpec;
-import javax.xml.bind.DatatypeConverter;
-
+import cn.hutool.core.date.DateUtil;
+import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtBuilder;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import javax.crypto.spec.SecretKeySpec;
+import javax.xml.bind.DatatypeConverter;
+import java.security.Key;
+import java.util.Date;
 
+/**
+ * <p>
+ *
+ * </p>
+ *
+ * @author yejx
+ * @date 2019/12/3 17:24
+ */
 @Component("jwtTokenUtil")
 public class JwtTokenUtil {
 	
 	@Value("${JwtTokenUtil.jwtKey}")
 	private String jwtKey;
-	
-	//method to construct a JWT
-	public String createJWT(Map<String,String> infoMap, Date tokenExpiration) {
-	 
-	    //The JWT signature algorithm we will be using to sign the token
+
+	public String createJwtById(String id, String subject) {
+		return createJwtById(id, subject, DateUtil.offsetDay(DateUtil.date(), 1));
+	}
+
+	public String createJwtById(String id, String subject, Date tokenExpiration) {
 	    SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
-	 
-	    //We will sign our JWT with our ApiKey secret
 	    byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(jwtKey);
 	    Key signingKey = new SecretKeySpec(apiKeySecretBytes, signatureAlgorithm.getJcaName());
 	 
-	    Map<String, Object> claims = new  HashMap<String, Object>(infoMap);
-	    claims.put(Claims.ID,UUID.randomUUID());
-	    
-	    //Let's set the JWT Claims
 	    JwtBuilder builder = Jwts.builder()
-	    		.setClaims(claims)
+	    		.setId(id)
+				.setSubject(subject)
 	    		.signWith(signatureAlgorithm, signingKey);
 	    
 	    if(null != tokenExpiration) {
 	    	builder.setExpiration(tokenExpiration);
 	    }
 	 
-	    //Builds the JWT and serializes it to a compact, URL-safe string
 	    return builder.compact();
 	}
-	
-	//method to validate and read the JWT
-	public Map<String, String> parseJWT(String jwt) {
-	    //This line will throw an exception if it is not a signed JWS (as expected)
-		Claims claims = Jwts.parser()         
-	       .setSigningKey(DatatypeConverter.parseBase64Binary(jwtKey))
-	       .parseClaimsJws(jwt).getBody();
-		
-		Map<String,String> result = new HashMap<String, String>();
-		//去除系统信息
-		claims.remove(Claims.ISSUER);
-		claims.remove(Claims.SUBJECT);
-		claims.remove(Claims.AUDIENCE);
-		claims.remove(Claims.EXPIRATION);
-		claims.remove(Claims.NOT_BEFORE);
-		claims.remove(Claims.ISSUED_AT);
-		claims.remove(Claims.ID);
-		
-		for(Map.Entry<String, Object> en : claims.entrySet()) {
-			result.put(en.getKey(), (String)en.getValue());
+
+	private Claims getClaimFromToken(String token) {
+		return (Claims)Jwts.parser().setSigningKey(DatatypeConverter.parseBase64Binary(jwtKey)).parseClaimsJws(token).getBody();
+	}
+
+	public String getJwtIdFromToken(String token) {
+		return this.getClaimFromToken(token).getId();
+	}
+
+	public Date getExpirationDateFromToken(String token) {
+		return this.getClaimFromToken(token).getExpiration();
+	}
+
+	public Boolean checkToken(String token) throws JwtException {
+		try {
+			Jwts.parser().setSigningKey(DatatypeConverter.parseBase64Binary(jwtKey)).parseClaimsJws(token);
+			return true;
+		} catch (JwtException var3) {
+			return false;
 		}
-		return result;
+	}
+
+	public Boolean isTokenExpired(String token) {
+		try {
+			Date expiration = this.getExpirationDateFromToken(token);
+			return expiration.before(new Date());
+		} catch (ExpiredJwtException var3) {
+			return true;
+		}
 	}
 }

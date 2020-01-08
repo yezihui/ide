@@ -1,4 +1,4 @@
-package cn.com.webtax.mongo.document.modular.system;
+package com.yjx.mongo.document.system;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;

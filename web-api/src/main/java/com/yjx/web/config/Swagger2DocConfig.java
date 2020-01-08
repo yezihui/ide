@@ -1,5 +1,6 @@
-package cn.com.webtax.web.config;
+package com.yjx.web.config;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.http.ContentType;
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import io.swagger.annotations.ApiOperation;
@@ -26,8 +27,8 @@ import static java.util.Collections.singletonList;
  * swagger自定义配置
  * </p>
  *
- * @author Shawn Deng
- * @date 2019-05-28 14:57
+ * @author yejx
+ * @date 2019/12/18 16:35
  */
 @Configuration
 @Profile({"dev","test"})
@@ -46,21 +47,21 @@ public class Swagger2DocConfig {
                 .apiInfo(apiInfo())
                 .securitySchemes(singletonList(tokenKey()))
                 .securityContexts(singletonList(securityContext()))
-                .protocols(newHashSet("HTTP"))
-                .produces(newHashSet(ContentType.JSON.toString()));
+                .protocols(CollUtil.newHashSet("HTTP"))
+                .produces(CollUtil.newHashSet(ContentType.JSON.toString()));
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("答税后台系统接口")
-                .description("提供答税后台系统所有服务接口")
+                .title("后台系统接口")
+                .description("提供后台系统所有服务接口")
                 .version("1.0.build")
-                .license("www.webtax.com.cn")
-                .licenseUrl("http://www.webtax.com.cn")
-                .contact(new Contact("shawn.deng",
-                        "http://code.webtax.com.cn/shawndeng",
-                        "shawn.deng@webtax.com.cn"))
-                .termsOfServiceUrl("http://code.webtax.com.cn")
+                .license("xxxxxxx")
+                .licenseUrl("http://xxxxxxxxxxxxx")
+                .contact(new Contact("yejx",
+                        "http://xxxxxxxxxxxxx",
+                        "xxxxxxxxxxxxx@qq.com"))
+                .termsOfServiceUrl("http://xxxxxxxxxxxxx")
                 .build();
     }
 
