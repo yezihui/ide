@@ -174,7 +174,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.58</version>
+                <version>1.2.83</version>
             </dependency>
 
             <!--必须，去除冗余代码插件,SDK文档:https://projectlombok.org/-->
